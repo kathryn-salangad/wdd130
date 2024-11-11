@@ -1,43 +1,94 @@
-main {
-    max-width: 840px
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
-nav a {
-    color: white;
-    padding: 10px;
-    display: block;
-
-}
-
-h1 {
-    color: steelblue;
-}
-
-aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgba(0,0,0,0.2); /* might change to hex later */
-    padding: 1rem;
-    background-color: #eee;
+/* Body Styling */
+body {
+    background-color: #f4f4f4;
     color: #333;
+    line-height: 1.6;
+    font-size: 18px;
+    padding: 0 10%;
+}
+
+/* Header Styling */
+header {
+    background-color: #4a90e2;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Section */
+main {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-aside img {
-    width: 200px
-    height: auto;
+main h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
 }
 
+/* Specific Rule for Images in Main */
 main img {
-    width: 150px;
+    border-radius: 50%;
+    margin: 10px 0;
+    width: 200px;
     height: auto;
-    ...
 }
 
-p { padding: 0;}
+/* Paragraphs */
+p {
+    padding: 0; /* Required: padding set to 0 with no units */
+}
 
-footer { 
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
+/* Aside Section */
+aside {
+    background-color: #e8f4fc;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%; /* Ensures it fills the container */
+    color: #555;
+}
+
+/* Specific Rule for Images in Aside */
+aside img {
+    width: 200px; /* Required width */
+    height: auto; /* Required height */
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+}
+
+/* Footer Section */
+footer {
+    text-align: center; /* Required text alignment */
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px; /* Required margin-top */
+    border-top: 3px solid #4a90e2; /* Required border-top */
 }
