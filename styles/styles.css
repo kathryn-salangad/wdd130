@@ -3,22 +3,22 @@ main {
 }
 
 nav a {
-    color: white
-    padding: 10px
-    display: block
+    color: white;
+    padding: 10px;
+    display: block;
 
 }
 
-H1 {
+h1 {
     color: steelblue;
 }
 
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 1 px solid rgba(0,0,0,0.2); /* might change to hex later */
+    border: 1px solid rgba(0,0,0,0.2); /* might change to hex later */
     padding: 1rem;
-    background color: #eee;
+    background-color: #eee;
     color: #333;
     text-align: center;
 }
