@@ -2,10 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
-/* Body Styling */
 body {
     background-color: #f4f4f4;
     color: #333;
@@ -14,7 +13,6 @@ body {
     padding: 0 10%;
 }
 
-/* Header Styling */
 header {
     background-color: #4a90e2;
     padding: 20px 0;
@@ -33,7 +31,6 @@ header nav a:hover {
     text-decoration: underline;
 }
 
-/* Main Section */
 main {
     background-color: #fff;
     padding: 20px;
@@ -49,7 +46,6 @@ main h1 {
     color: #333;
 }
 
-/* Specific Rule for Images in Main */
 main img {
     border-radius: 50%;
     margin: 10px 0;
@@ -57,23 +53,21 @@ main img {
     height: auto;
 }
 
-/* Paragraphs */
 p {
-    padding: 0; /* Required: padding set to 0 with no units */
+    padding: 0;
 }
 
-/* Aside Section */
 aside {
     background-color: #e8f4fc;
     padding: 20px;
     margin: 20px 0;
     border: 1px solid #ccc;
     border-radius: 8px;
-    width: 100%; /* Ensures it fills the container */
+    width: 100%;
     color: #555;
+    text-align: center;
 }
 
-/* Specific Rule for Images in Aside */
 aside img {
     width: 200px; /* Required width */
     height: auto; /* Required height */
@@ -82,7 +76,6 @@ aside img {
     border-radius: 8px;
 }
 
-/* Footer Section */
 footer {
     text-align: center; /* Required text alignment */
     padding: 10px 0;
