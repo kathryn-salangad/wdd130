@@ -39,7 +39,7 @@ main {
     margin: 20px 0;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    text-align: left;
 }
 
 main h1 {
@@ -49,14 +49,16 @@ main h1 {
 }
 
 main img {
-    border-radius: 50%;
-    margin: 10px 0;
+    border-radius: 5%;
+    margin: 0 0 1rem 1rem;
     width: 200px;
     height: auto;
+    float: right;
 }
 
 p {
     padding: 0; /* Required */
+    margin: 1rem;
 }
 
 aside {
@@ -65,16 +67,25 @@ aside {
     margin: 20px 0;
     border: 1px solid #ccc;
     border-radius: 8px;
-    width: 100%;
+    width: 20em;
     color: #555;
     text-align: center;
+    position: relative;
+}
+
+aside h2{
+    position: absolute;
+    top: 50px;
+    left: 5px;
+    color: #fff;
+    font size: 1rem;
 }
 
 aside img {
-    width: 200px; /* Required width */
+    width: 300px; /* Required width */
     height: auto; /* Required height */
     display: block;
-    margin: 10px auto;
+    margin: 20px auto;
     border-radius: 8px;
 }
 
@@ -85,4 +96,18 @@ footer {
     color: #fff;
     margin-top: 20px; /* Required margin-top */
     border-top: 3px solid #4a90e2; /* Required border-top */
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    background-color: #eee;
+    color: #000;
+    border-radius: 8px;
+}
+
+.indent {
+    padding-left: 2rem;
 }
