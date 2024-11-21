@@ -9,10 +9,17 @@ body {
 }
 
 header {
-    background-color: #134266;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fffff;
     color: #ffffff;
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 20px;
+}
+
+header img {
+    max-width: 150px;
 }
 
 header h1 {
@@ -22,17 +29,17 @@ header h1 {
 }
 
 nav {
-    background-color: #78C5D7;
+    background-color: #ffffff;
     text-align: center;
     padding: 10px 0;
 }
 
 nav a {
     text-decoration: none;
-    color: #ffffff;
+    color: #78C5D7;
     font-weight: normal;
-    margin: 0 15px;
-    font-size: 1rem;
+    margin: 0 10px;
+    font-size: 1.5rem;
     font-family: 'Bebas Neue', sans-serif;
 }
 
@@ -47,40 +54,32 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     background: url('images/littlecolorado.jpg') no-repeat center center/cover;
-    color: #134266; /* Dark text color for readability */
-    text-align: center;
+    color: #ffffff; /* Dark text color for readability */
+    align-items: center;
     padding: 100px 20px;
-    margin: 20px auto;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
     position: relative;
-    max-width: 800px; /* Align with wireframe width */
 }
-
 .hero h1 {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+    font-size: 3rem;
+    Top: 20px;
     color: #ffffff; /* White text for contrast */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    position: absolute;
 }
 
 .hero article {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.9); /* Light background for article content */
-    padding: 15px;
+    position: absolute;
+    bottom: 20%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     max-width: 700px;
-    margin-top: 20px;
 }
 
 .hero article img {
-    width: 120px; /* Fixed size for the inline image */
-    height: auto;
-    margin-right: 20px;
+    float: right;
+    margin: 0 0 10px 10px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -139,6 +138,7 @@ footer .sociallinks {
     justify-content: center;
     gap: 10px;
     margin-top: 10px;
+    text-decoration: none;
 }
 
 footer .sociallinks a {
@@ -150,7 +150,7 @@ footer .sociallinks img {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    transition: transform 0.2s ease;
+    margin: 1 10px;
 }
 
 footer .sociallinks img:hover {
