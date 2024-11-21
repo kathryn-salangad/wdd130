@@ -13,7 +13,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: #fffff;
+    background-color: whitesmoke;
     color: #ffffff;
     text-align: center;
     padding: 20px 0;
@@ -57,20 +57,19 @@ nav a:hover {
 /* Hero Section */
 .hero {
     display: flex;
-    flex-direction: column; /* Stacks the content vertically */
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: url('images\narrowcanyon.jpg') no-repeat center center/cover;
     color: #ffffff;
-    padding: 150px 20px; /* Extra padding for space around content */
+    padding: 150px 20px;
     position: relative;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background: url('../images/canyon.jpg') no-repeat center center/cover;
 }
 
 /* Hero Content */
 .hero-content {
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
     padding: 20px 30px;
     border-radius: 5px;
     max-width: 800px;
@@ -101,13 +100,14 @@ nav a:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     max-width: 700px;
     margin-top: 20px;
+    opacity: 0.75;
 }
 
 .hero article img {
     float: right;
-    width: 120px; /* Image size for a balanced look */
+    width: 120px;
     height: auto;
-    margin: 0 10px 10px 10px;
+    margin: 0 10px 10px 0;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -179,7 +179,7 @@ footer .sociallinks img {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    margin: 1 10px;
+    margin: 1px 10px;
 }
 
 footer .sociallinks img:hover {
