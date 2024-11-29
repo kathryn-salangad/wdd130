@@ -214,11 +214,13 @@ figure figcaption {
 /* Footer Section */
 footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     background-color: var(--primary-color);
     color: var(--text-color);
     padding: 20px 10px;
     text-align: center;
+    position: relative;
 }
 
 footer .sociallinks {
@@ -226,12 +228,14 @@ footer .sociallinks {
     justify-content: flex-end;
     gap: 10px;
     margin: 0;
+    gap: 10px;
 }
 
 footer .sociallinks img {
     width: 20px;
     height: 20px;
     transition: transform 0.3s ease;
+    margin: 0;
 }
 
 footer .sociallinks img:hover {
@@ -241,6 +245,7 @@ footer .sociallinks img:hover {
 footer p {
     margin: 0;
     font-size: 0.9rem;
+    flex: 1;
 }
 
 /* Media Queries for Responsiveness */
