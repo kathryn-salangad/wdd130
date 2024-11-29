@@ -64,6 +64,12 @@ nav a:hover {
     color: var(--highlight-color);
 }
 
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 /* Hero Section */
 .hero {
     display: flex;
@@ -77,6 +83,8 @@ nav a:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     background: var(--primary-color) url('../images/canyon.jpg') no-repeat center center/cover;
     height: 100vh;
+    max-width: 1500;
+    margin: 0 auto;
 }
 
 .hero-content {
