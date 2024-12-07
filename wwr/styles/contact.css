@@ -11,11 +11,15 @@
     --transition-speed: 0.3s;
 }
 
-*, *::before, *::after {
-    box-sizing: border-box;
+/* General Styles */
+body {
+    font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
-    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    color: var(--primary-color);
+    background-color: var(--background-color);
+    box-sizing: border-box; 
 }
 
 /* General Styles */
