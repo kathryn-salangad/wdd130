@@ -41,8 +41,6 @@ header img {
     height: auto;
 }
 
-
-/* Navigation Styles */
 nav {
     display: flex;
     justify-content: center;
@@ -52,10 +50,11 @@ nav {
 nav a {
     text-decoration: none;
     color: var(--primary-color);
+    font-family: var(--font-heading);
     font-weight: bold;
     padding: 10px 20px;
     border: 2px solid var(--border-color);
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     background-color: var(--text-color);
     text-align: center;
 }
