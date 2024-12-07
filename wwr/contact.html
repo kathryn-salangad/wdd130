@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <!DOCTYPE html>
-    <html lang="en-US">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -24,119 +22,112 @@
         </nav>
     </header>
 
-<section class="hero">
-    <h1>Reach Out to Us!</h1>
-    <p>We're here to help you plan your next whitewater adventure. Whether you have questions or feedback, let us know how we can assist.</p>
-</section>
-
-<main class="main-content">
-    <div class="left-section">
-        <section class="contact-info">
-            <h2>Contact Us</h2>
-            <p><strong>Address:</strong> 123 Adventure Lane, Rapids City</p>
-            <p><strong>Phone:</strong> (123) 456-7890</p>
-            <p><strong>Email:</strong> contact@raftingco.com</p>
-        </section>
-    
-        <section class="team-section">
-            <h2>Meet Our Team</h2>
-            <div class="team-members">
-                <div class="team-member">
-                    <img src="images/mary-grace-piattos.jpg" alt="Mary Grace Piattos">
-                    <h3>Mary Grace Piattos</h3>
-                    <p>Site Manager</p>
+    <main class="main-content">
+        <!-- Left Section -->
+        <div class="left-section">
+            <!-- Hero Content -->
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Reach Out to Us!</h1>
+                    <p>We're here to help you plan your next whitewater adventure. Whether you have questions or feedback, let us know how we can assist.</p>
                 </div>
-                <div class="team-member">
-                    <img src="images/koko-villanueva.jpg" alt="Koko Villanueva">
-                    <h3>Koko Villanueva</h3>
-                    <p>Guide</p>
+            </section>
+    
+            <!-- Contact Information -->
+            <section class="contact-info">
+                <h2>Contact Information</h2>
+                <p><strong>Address:</strong> Adventure Trail, Rapid City, SD 57702, USA</p>
+                <p><strong>Phone:</strong> (123) 456-7890</p>
+                <p><strong>Email:</strong> support@raftingco.com</p>
+            </section>
+    
+            <!-- Meet Our Team -->
+            <section class="team-section">
+                <h2>Meet Our Team</h2>
+                <div class="team-members">
+                    <div class="card">
+                        <img src="images/mary-grace-piattos.jpg" alt="Mary Grace Piattos">
+                        <h3>Mary Grace Piattos</h3>
+                        <p>Site Manager</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/koko-villanueva.jpg" alt="Koko Villanueva">
+                        <h3>Koko Villanueva</h3>
+                        <p>Guide</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/lorraine-marshall.jpg" alt="Lorraine Marshall">
+                        <h3>Lorraine Marshall</h3>
+                        <p>Support Staff</p>
+                    </div>
                 </div>
-                <div class="team-member">
-                    <img src="images/lorraine-marshall.jpg" alt="Lorraine Marshall">
-                    <h3>Lorraine Marshall</h3>
-                    <p>Support Staff</p>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
     
-        <section class="map-section">
-            <h2>Find Us Here</h2>
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2865.68162380927!2d-103.28646838715578!3d44.08992557096421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x877d5b419cffd61b%3A0x6aaf39515e350877!2sAdventure%20Trail%2C%20Rapid%20City%2C%20SD%2057702%2C%20USA!5e0!3m2!1sen!2sph!4v1733549581917!5m2!1sen!2sph" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </section>
-    </div>
-
-    <section class="contact-form">
-        <h2>Send Us a Message</h2>
-        <form action="#" method="POST">
-            <!-- Full Name -->
-            <div class="form-group">
-                <label for="name">1. Your Full Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-            </div>
+        <!-- Right Section -->
+        <div class="right-section">
+            <!-- Contact Form -->
+            <section class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Your Full Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Your Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="purpose">Message Purpose:</label>
+                        <select id="purpose" name="purpose" required>
+                            <option value="" selected disabled>Choose one...</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="booking">Booking</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Are you a previous customer?</label>
+                        <div>
+                            <label for="customer-yes">
+                                <input type="radio" id="customer-yes" name="customer" value="yes" required> Yes
+                            </label>
+                            <label for="customer-no">
+                                <input type="radio" id="customer-no" name="customer" value="no" required> No
+                            </label>
+                            <label for="customer-not-sure">
+                                <input type="radio" id="customer-not-sure" name="customer" value="not-sure" required> Not Sure
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="newsletter">
+                            <input type="checkbox" id="newsletter" name="newsletter"> Subscribe to our newsletter
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Submit Message</button>
+                    </div>
+                </form>
+            </section>
     
-            <!-- Email -->
-            <div class="form-group">
-                <label for="email">2. Your Email Address:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-            </div>
-    
-            <!-- Phone -->
-            <div class="form-group">
-                <label for="phone">3. Your Phone Number:</label>
-                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
-            </div>
-    
-            <!-- Message Purpose -->
-            <div class="form-group">
-                <label for="purpose">4. Message Purpose:</label>
-                <select id="purpose" name="purpose" required>
-                    <option value="" selected disabled>Choose one...</option>
-                    <option value="general">General Inquiry</option>
-                    <option value="booking">Booking</option>
-                    <option value="feedback">Feedback</option>
-                </select>
-            </div>
-    
-            <!-- Message -->
-            <div class="form-group">
-                <label for="message">5. Your Message:</label>
-                <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
-            </div>
-    
-            <!-- Are you a previous customer? (Radio Buttons) -->
-            <div class="form-group">
-                <label>6. Are you a previous customer?</label>
-                <div>
-                    <label for="customer-yes">
-                        <input type="radio" id="customer-yes" name="customer" value="yes" required> Yes
-                    </label>
-                    <label for="customer-no">
-                        <input type="radio" id="customer-no" name="customer" value="no" required> No
-                    </label>
-                    <label for="customer-not-sure">
-                        <input type="radio" id="customer-not-sure" name="customer" value="not-sure" required> Not Sure
-                    </label>
-                </div>
-            </div>
-    
-            <!-- Subscribe to Newsletter (Checkbox) -->
-            <div class="form-group">
-                <label for="newsletter">
-                    <input type="checkbox" id="newsletter" name="newsletter"> Subscribe to our newsletter
-                </label>
-            </div>
-    
-            <!-- Submit Button -->
-            <div class="form-group">
-                <button type="submit">Submit Message</button>
-            </div>
-        </form>
-    </section>
-    
-</main>
-
+            <!-- Google Map Section -->
+            <section class="map-section">
+                <h2>Find Us on the Map</h2>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2865.68162380927!2d-103.28646838715578!3d44.08992557096421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x877d5b419cffd61b%3A0x6aaf39515e350877!2sAdventure%20Trail%2C%20Rapid%20City%2C%20SD%2057702%2C%20USA!5e0!3m2!1sen!2sph!4v1733553920418!5m2!1sen!2sph" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </div>
+    </main>
 <footer>
     <p>©2024 Dry Oar Rafting Co. | Created by Kathryn B. Salangad</p>
     <div class="sociallinks">
