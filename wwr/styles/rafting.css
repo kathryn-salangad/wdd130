@@ -28,21 +28,19 @@ body {
 
 /* Header Section */
 header {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
     background-color: var(--secondary-color);
-    padding: 20px;
-    border: 2px solid var(--border-color);
-    height: 150px;
+    padding: 1rem;
+    border-bottom: 2px solid var(--border-color);
 }
 
-/* Logo Styles */
 header img {
     max-width: 100px;
     height: auto;
-    justify-self: center;
 }
+
 
 /* Navigation Styles */
 nav {
