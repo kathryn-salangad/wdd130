@@ -168,12 +168,10 @@ nav a:focus-visible {
 .contact-form textarea {
     resize: vertical; /* Allow vertical resizing only */
     min-height: 120px; /* Ensure enough height for text area */
-    .form-group {
-    margin-bottom: 20px; /* Add spacing between form fields */
 }
 
-.form-group {
-    margin-bottom: 20px; /* Add spacing between form fields */
+.form-field-container {
+    margin-bottom: 20px;
 }
 
 input[type="checkbox"] {
