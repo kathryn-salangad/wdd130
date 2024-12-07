@@ -5,7 +5,7 @@
     --text-color: #ffffff; /* White */
     --background-color: #f5f5f5; /* Light gray background */
     --border-color: #ccc; /* Light gray for borders */
-    --font-heading: 'Bebas Neue', sans-serif; /* Font for headings */
+    --font-heading: 'Bebas Neue', Arial, sans-serif; /* Font for headings */
     --border-radius: 5px; /* Consistent border radius */
     --focus-color: #FFAA00; /* Focus outline color */
 }
@@ -28,14 +28,12 @@ header {
     height: 10rem; /* Consistent units */
 }
 
-/* Logo Styles */
 header img {
     max-width: 100px;
     height: auto;
     justify-self: center;
 }
 
-/* Navigation Styles */
 nav {
     display: flex;
     justify-content: center;
@@ -59,18 +57,19 @@ nav a:hover {
     background-color: var(--primary-color);
 }
 
-nav a:focus {
+nav a:focus-visible {
     outline: 2px solid var(--focus-color);
     outline-offset: 2px;
 }
 
 /* Hero Section */
 .hero {
-    width: 100%;
     text-align: center;
     padding: 30px 15px;
     background-color: var(--highlight-color);
     color: var(--text-color);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .hero h1 {
@@ -81,34 +80,36 @@ nav a:focus {
 
 /* Main Content Section */
 .main-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
     max-width: 1200px;
     width: 100%;
     padding: 20px;
+    margin: 0 auto;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
     gap: 20px;
 }
 
-.left-section, .right-section {
-    flex: 1 1 48%;
-}
-
-/* Sections */
-.contact-info, .team-section, .contact-form {
-    margin-bottom: 20px;
-    background-color: var(--background-color);
+.right-section {
     padding: 15px;
+    background-color: var(--background-color);
     border-radius: var(--border-radius);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.contact-info h2, .team-section h2, .contact-form h2 {
-    margin-bottom: 15px;
-    color: var(--primary-color);
-    font-family: var(--font-heading);
+/* Contact Information and Team Sections */
+.contact-info, .team-section {
+    padding: 15px;
+    background-color: var(--background-color);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Team Cards */
 .team-members {
     display: flex;
     gap: 15px;
@@ -116,66 +117,139 @@ nav a:focus {
 }
 
 .card {
-    text-align: center;
-    flex: 1 1 calc(33% - 15px);
-    background-color: var(--text-color);
-    border-radius: var(--border-radius);
-    padding: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.card img {
-    max-width: 100px;
-    border-radius: 50%;
-    margin-bottom: 10px;
+    flex: 1 1 calc(33% - 10px);
 }
 
 /* Contact Form */
-.contact-form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+.contact-form {
+    padding: 30px; /* Increased padding for better spacing */
+    background-color: var(--background-color); /* Light gray for contrast */
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
 }
 
-.contact-form input, .contact-form select, .contact-form textarea, .contact-form button {
+.contact-form h2 {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    text-align: center; /* Center the form title */
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px; /* Add space between label and input */
+    color: var(--primary-color); /* Use primary color for emphasis */
+    font-size: 1rem;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
     width: 100%;
-    margin-bottom: 15px;
-    padding: 10px;
-    border-radius: var(--border-radius);
+    padding: 12px; /* Comfortable padding for inputs */
     border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    margin-bottom: 20px; /* Space between fields */
+    font-size: 1rem; /* Standard input font size */
+    color: var(--primary-color);
+    background-color: var(--text-color); /* White background for inputs */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Slight inner shadow for depth */
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    outline: 2px solid var(--focus-color); /* Add focus outline */
+    box-shadow: 0 0 4px var(--focus-color); /* Subtle glow effect */
+}
+
+.contact-form textarea {
+    resize: vertical; /* Allow vertical resizing only */
+    min-height: 120px; /* Ensure enough height for text area */
 }
 
 .contact-form button {
+    width: 100%; /* Full width button for mobile */
+    padding: 15px;
     background-color: var(--primary-color);
     color: var(--text-color);
     font-weight: bold;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .contact-form button:hover {
     background-color: var(--highlight-color);
     color: var(--primary-color);
+    transform: scale(1.02); /* Slight zoom effect on hover */
 }
 
-/* Map Section */
+.contact-form button:active {
+    transform: scale(0.98); /* Button presses inward slightly */
+}
+
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 20px;
+    }
+
+    .contact-form h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+
+    .contact-form button {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+}
+
+/* Map */
 .map-section {
     margin-top: 20px;
-    padding: 0; /* Remove padding for a seamless full-size map */
-    background-color: var(--background-color);
+    padding: 10px;
+    background-color: var(--background-color); /* Match form and content styling */
     border-radius: var(--border-radius);
-    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow: hidden; /* Prevent overflow issues with the iframe */
+    text-align: center; /* Center align section heading */
 }
 
 .map-section h2 {
     margin-bottom: 15px;
     color: var(--primary-color);
     font-family: var(--font-heading);
+    font-size: 1.8rem;
 }
 
-.map iframe {
-    width: 100%;
-    height: calc(100vh - 80px); /* Adjust height as needed */
-    border: none; /* Replaces inline "style='border:0;'" */
+.map-iframe {
+    width: 100%; /* Full width of the container */
+    height: 400px; /* Default height */
+    border: none; /* Remove border */
+    border-radius: var(--border-radius); /* Add rounded corners for consistency */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+@media (max-width: 768px) {
+    .map-iframe {
+        height: 300px; /* Reduce height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .map-iframe {
+        height: 250px; /* Further reduce height for very small screens */
+    }
 }
 
 
@@ -190,14 +264,11 @@ footer {
     color: var(--text-color);
     padding: 20px 10px;
     text-align: center;
-    position: relative;
 }
 
 footer .sociallinks {
     display: flex;
-    justify-content: flex-end;
     gap: 10px;
-    margin: 0;
 }
 
 footer .sociallinks img {
@@ -213,30 +284,20 @@ footer .sociallinks img:hover {
 footer p {
     margin: 0;
     font-size: 0.9rem;
-    flex: 1;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .main-content {
-        flex-direction: column;
-    }
-
-    .left-section, .right-section {
-        flex: 1 1 100%;
-    }
-
-    .card {
-        flex: 1 1 100%;
-    }
-
-    header {
         grid-template-columns: 1fr;
-        text-align: center;
     }
 
-    nav {
-        flex-wrap: wrap;
+    .team-members {
+        flex-direction: column;
         gap: 10px;
+    }
+
+    footer .sociallinks {
+        justify-content: center;
     }
 }
