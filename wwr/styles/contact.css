@@ -174,10 +174,10 @@ nav a:focus {
 
 .map iframe {
     width: 100%;
-    height: calc(100vh - 80px); /* Adjust height to fill viewport minus header/footer */
-    border: 0;
-    border-radius: 0; /* Remove border radius for a seamless edge-to-edge look */
+    height: calc(100vh - 80px); /* Adjust height as needed */
+    border: none; /* Replaces inline "style='border:0;'" */
 }
+
 
 
 /* Footer Section */
