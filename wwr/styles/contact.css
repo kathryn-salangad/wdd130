@@ -201,7 +201,6 @@ label[for="subscribe"] {
     align-items: center;
     gap: 5px; /* Optional gap for alignment */
 }
-}
 
 .contact-form button {
     width: 100%; /* Full width button for mobile */
