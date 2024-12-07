@@ -168,6 +168,41 @@ nav a:focus-visible {
 .contact-form textarea {
     resize: vertical; /* Allow vertical resizing only */
     min-height: 120px; /* Ensure enough height for text area */
+    .form-group {
+    margin-bottom: 20px; /* Add spacing between form fields */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Add spacing between form fields */
+}
+
+input[type="checkbox"] {
+    accent-color: var(--primary-color); /* Use primary color for checkbox */
+    cursor: pointer;
+    margin-right: 8px; /* Space between checkbox and label text */
+}
+
+label[for="subscribe"] {
+    font-size: 1rem; /* Match other text sizes */
+    color: var(--primary-color);
+    display: flex;
+    align-items: start;
+    gap: 5px; /* Optional gap for alignment */
+}
+
+input[type="checkbox"] {
+    accent-color: var(--primary-color); /* Use primary color for checkbox */
+    cursor: pointer;
+    margin-right: 8px; /* Space between checkbox and label text */
+}
+
+label[for="subscribe"] {
+    font-size: 1rem; /* Match other text sizes */
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Optional gap for alignment */
+}
 }
 
 .contact-form button {
@@ -257,17 +292,20 @@ nav a:focus-visible {
 /* Footer Section */
 footer {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     background-color: var(--primary-color);
     color: var(--text-color);
     padding: 20px 10px;
     text-align: center;
+    position: relative;
 }
 
 footer .sociallinks {
     display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin: 0;
     gap: 10px;
 }
 
@@ -275,6 +313,7 @@ footer .sociallinks img {
     width: 20px;
     height: 20px;
     transition: transform 0.3s ease;
+    margin: 0;
 }
 
 footer .sociallinks img:hover {
@@ -284,6 +323,7 @@ footer .sociallinks img:hover {
 footer p {
     margin: 0;
     font-size: 0.9rem;
+    flex: 1;
 }
 
 /* Responsive Adjustments */
