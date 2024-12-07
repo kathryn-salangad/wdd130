@@ -174,34 +174,36 @@ nav a:focus-visible {
     margin-bottom: 20px;
 }
 
+/* Checkbox Styling */
 input[type="checkbox"] {
-    accent-color: var(--primary-color); /* Use primary color for checkbox */
-    cursor: pointer;
+    accent-color: var(--primary-color); /* Match theme's primary color */
+    cursor: pointer; /* Pointer cursor for interactivity */
     margin-right: 8px; /* Space between checkbox and label text */
+    width: 16px; /* Define consistent size */
+    height: 16px; /* Define consistent size */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth interaction effects */
 }
 
+input[type="checkbox"]:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2); /* Add subtle shadow effect */
+}
+
+input[type="checkbox"]:focus {
+    outline: 2px solid var(--focus-color); /* Clear focus outline for accessibility */
+    outline-offset: 2px;
+}
+
+/* Label Styling */
 label[for="subscribe"] {
-    font-size: 1rem; /* Match other text sizes */
-    color: var(--primary-color);
-    display: flex;
-    align-items: start;
-    gap: 5px; /* Optional gap for alignment */
+    font-size: 1rem; /* Match input text size */
+    color: var(--primary-color); /* Use the primary color for text */
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Vertically align checkbox and label text */
+    gap: 10px; /* Space between checkbox and text */
+    cursor: pointer; /* Pointer cursor for the entire label */
+    user-select: none; /* Prevent text selection on click */
 }
-
-input[type="checkbox"] {
-    accent-color: var(--primary-color); /* Use primary color for checkbox */
-    cursor: pointer;
-    margin-right: 8px; /* Space between checkbox and label text */
-}
-
-label[for="subscribe"] {
-    font-size: 1rem; /* Match other text sizes */
-    color: var(--primary-color);
-    display: flex;
-    align-items: center;
-    gap: 5px; /* Optional gap for alignment */
-}
-
 .contact-form button {
     width: 100%; /* Full width button for mobile */
     padding: 15px;
