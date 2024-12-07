@@ -70,6 +70,38 @@ nav a:hover {
     background-color: var(--primary-color);
 }
 
+/* Hero Section */
+.hero {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 4rem 2rem;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.6); /* Adds a dark overlay for text readability */
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow-light);
+}
+
+.hero h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--primary-color);
+}
+
 /* Main Content Layout */
 .main-content {
     display: grid;
@@ -115,7 +147,7 @@ nav a:hover {
 }
 
 .team-section h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--primary-color);
     margin-bottom: 2rem;
 }
@@ -167,46 +199,60 @@ nav a:hover {
     color: #555;
 }
 
-/* Form Section */
+/* Contact Section */
 .contact-form {
-    padding: 1rem;
+    width: 100%;
+    max-width: 800px; /* Limit the width for readability */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 2rem; /* Add inner spacing */
     background-color: var(--text-color);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow-light);
 }
 
-.contact-form h2 {
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.contact-form label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-    color: var(--primary-color);
-}
-
-.contact-form input, .contact-form textarea, .contact-form button, .contact-form select {
-    width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
+/* Add padding to form elements to prevent tight spacing */
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: calc(100% - 1rem); /* Adjust width to allow space for padding */
+    padding: 0.8rem;
+    font-size: var(--font-size-base);
     border: 1px solid var(--border-color);
     border-radius: var(--border-radius);
-    font-size: var(--font-size-base);
+    margin-bottom: 1rem;
 }
 
-.contact-form input:focus, .contact-form textarea:focus, .contact-form select:focus {
-    outline: none;
-    border-color: var(--secondary-color);
-    box-shadow: 0 0 5px rgba(120, 197, 215, 0.5);
+/* Adjust padding and spacing for labels */
+.contact-form label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    display: block;
+    margin-bottom: 0.5rem;
 }
 
+/* Ensure radio buttons and checkboxes do not disrupt layout */
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+/* Form group adjustments for better spacing */
+.contact-form .form-group {
+    margin-bottom: 1.5rem; /* Adds consistent space between fields */
+}
+
+/* Adjust button to align properly */
 .contact-form button {
-    background-color: var(--primary-color);
+    width: 100%;
+    padding: 0.8rem;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.2rem;
     color: var(--text-color);
+    background-color: var(--primary-color);
     border: none;
+    border-radius: var(--border-radius);
     cursor: pointer;
     transition: background-color var(--transition-speed);
 }
@@ -217,23 +263,31 @@ nav a:hover {
 
 /* Map Section */
 .map-section {
-    margin: 2rem 0;
-    text-align: center;
+    margin-top: 2rem;
 }
 
 .map-section h2 {
+    font-family: 'Bebas Neue', cursive;
     font-size: 2rem;
-    margin-bottom: 1rem;
-    font-family: var(--font-heading);
     color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
-.map-container iframe {
-    width: 100%;
-    height: 450px;
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.google-map {
+    width: 100%; /* Adjust the width to fit the container */
+    height: 300px; /* Set an appropriate height */
+    border: none;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow-light);
 }
+
 
 /* Footer Section */
 footer {
