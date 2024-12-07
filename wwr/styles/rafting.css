@@ -5,6 +5,7 @@
     --text-color: #ffffff; /* White */
     --background-color: #f5f5f5; /* Light gray background */
     --border-color: #ccc; /* Light gray for borders */
+    --font-heading: 'Bebas Neue', sans-serif; /* Headings font */
 }
 
 /* General Styles */
