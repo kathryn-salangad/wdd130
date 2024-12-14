@@ -245,20 +245,6 @@ nav a:focus-visible {
 }
 
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .content-wrapper {
-        grid-template-columns: 1fr; 
-    }
-
-    .photo-overlay {
-        top: 10%;
-        left: 10%;
-        width: 80%;
-    }
-}
-
-
 
 /* CONTACT PAGE SETTINGS */
 .main-content {
