@@ -189,7 +189,6 @@ nav a:focus-visible {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    color: var(--primary-color); /* Dark blue for text */
 }
 
 .text h2 {
@@ -202,7 +201,6 @@ nav a:focus-visible {
 .text p {
     font-size: 1rem; /* Adjust paragraph size */
     line-height: 1.8; /* Better readability */
-    color: #555; /* Subtle dark gray for text */
 }
 
 /* Call-to-Action Button */
