@@ -898,13 +898,14 @@ table tbody tr:hover {
 }
 
 .about-banner h1 {
-    Display: flex;
-    align-items: center;
-    font-size: 2.5rem;
-    font-family: var(--font-heading);
-    color: var(--primary-color); /* Matches the site's theme */
-    margin-bottom: 20px; /* Space below the heading */
-    text-align: center;
+    position: relative;
+    z-index: 2;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color); 
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .hero-overlay {
